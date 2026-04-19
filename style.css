@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Definido variaveis */
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-principal: "Inter", sans-serif;
+}
+
+body{
+    /* var é uma função, que retorna a cor atraves da variável passada*/
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("./img/Background.png");
+    background-repeat: no-repeat; /*Não repita*/
+    background-size: contain;/*Contain, fica cheio no container - Tenho que pesquisar sobre backgroun-size*/
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*50% 50% duas colunas com o mesmo tamanho*/
+    height: 100vh;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.container__img{
+    margin: 1em 0 2em 0;
+}
+.container__botao{
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario{
+    border: 2px solid var(--cinza-secundario);
+    /* background-color: rgba(1, 1, 1, 0.1); */
+    background-color: transparent;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__img{
+    width: 80%;
+}
+
+.container__titulo__descricao{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: .1em;
+}
+
+.container__texto__descricao{
+    color: var(--cinza-secundario);
+}
+
+.container__botao__secundario{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__botao__secundario:hover{
+    background-color: transparent;
+    border: 1px solid var(--botao-azul);
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.dispositivos__list__titulo{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+}
+
+.rodape__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2em;
+    margin-top: 1em;
+}
+
+.rodape__text{
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.list__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 16px;
+}
