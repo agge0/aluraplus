@@ -128,6 +128,11 @@ body{
 
 .rodape{
     text-align: center;
+    padding: 5em;
+}
+
+.rodape__img{
+    margin: 2em 0;
 }
 
 .rodape__list{
